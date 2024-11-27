@@ -1,0 +1,108 @@
+:root{
+    --primary: #f59e0b;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    font-family:inherit;
+    background-color: rgb(194, 199, 199);
+}
+
+.nav {
+    background: linear-gradient(#ffd69475,#ffd69475);
+    z-index: 999
+
+
+}
+.main-menu {
+    padding: 1rem;
+    border-radius: 2rem;
+    /* color: rgba(0, 0, 0, 0.733); */
+    z-index: 999999;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+
+
+
+/* hero css start */
+.hero {
+    background: linear-gradient(#ffd69475,#ffbb461a);
+    position: relative;
+}
+
+
+
+
+/* hero css end */
+
+
+
+/* service start */
+#service {
+    position: relative;
+    top: -8rem;
+    /* z-index: 9999; */
+}
+
+.service-child {
+    background-color: white;
+    /* background-color: red; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border-radius: 4rem;
+    overflow: hidden;
+    border: 2px solid rgba(128, 128, 128, 0.218);
+
+}
+
+/* /service end  */
+
+
+/* famouse section start  */
+.famous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.container {
+    width: 80vw;
+    border-top: 2px solid rgba(128, 128, 128, 0.218);
+    /* border-radius: 2rem; */
+    padding: 1rem;
+
+}
+.child-container {
+    width: 84%;
+}
+
+.famous-best {
+    font-size: 3rem;
+}
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+.top-container-right-child p {
+    color: gray;
+}
+/* famouse section end */
+
+
+/* discount-section start */
+.discount-section {
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+/* discount section end */
