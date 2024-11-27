@@ -71,8 +71,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
 }
 
 .container {
@@ -100,9 +98,5 @@ body {
 
 
 /* discount-section start */
-.discount-section {
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-}
 
 /* discount section end */
