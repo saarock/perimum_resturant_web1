@@ -430,7 +430,7 @@
 
             <!-- Lightbox Modal -->
             <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden">
-                <button class="absolute top-5 right-5 text-white text-3xl font-bold" onclick="closeLightbox()">
+                <button class="absolute top-64 right-10 text-white text-3xl font-bold" onclick="closeLightbox()">
                     &times;
                 </button>
                 <img id="lightboxImage" class="max-w-full max-h-full rounded-lg" src="" alt="Full Image" />
@@ -555,26 +555,8 @@
     </footer>
 
 
-    <script>
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightboxImage');
-            lightboxImage.src = imageSrc;
-            lightboxImage.style.height = "100vh"
-            lightbox.classList.remove('hidden');
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.add('hidden');
-        }
-
-        const mobileMenuButton = document.getElementById("mobileMenuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
+    <script src="./js/script.js">
+       
     </script>
 
 <script type="module">
