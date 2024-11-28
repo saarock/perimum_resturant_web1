@@ -4,105 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Navigation</title>
+    <title>Tarewa Sekuwa Fry</title>
+    <!-- talwind css and font-awesome api -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <!-- google for api -->
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="bg-gray-100">
-    <!-- Navigation Bar -->
-<!-- nav start  -->
-<nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
-    <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaYkUJksnOWEKERxd5W8AeCG7kOEcffj5LWChC0l-fK_KufrwfWGVuoQEraLX2CArVGw&usqp=CAU"
-                alt="Logo" class="h-12">
+
+    <!-- nav start  -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <h2 class="text-1xl sm:text-3xl font-extrabold leading-tight mb-4 text-yellow-500">Tarewa Sekuwa Fry
+                </h2>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex space-x-8 text-lg font-medium main-menu">
+                <a href="#" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Home</a>
+                <a href="#menu" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Menu</a>
+                <a href="#gallery" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Gallery</a>
+                <a href="#contact" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button class="text-white focus:outline-none" id="mobileMenuButton">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
 
-        <!-- Menu -->
-        <div class="hidden md:flex space-x-8 text-lg font-medium main-menu">
-            <a href="#" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Home</a>
-            <a href="#menu" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Menu</a>
-            <a href="#about" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">About Us</a>
-            <a href="#contact" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Contact</a>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobileMenu">
+            <div class="flex flex-col items-center py-4 space-y-4 bg-yellow-600 text-white">
+                <a href="#" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Home</a>
+                <a href="#menu" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Menu</a>
+                <a href="#gallery" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Gallery</a>
+                <a href="#contact" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Contact</a>
+            </div>
         </div>
+    </nav>
+    <!-- nav end -->
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center">
-            <button class="text-white focus:outline-none" id="mobileMenuButton">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
 
-    <!-- Mobile Menu -->
-    <div class="md:hidden hidden" id="mobileMenu">
-        <div class="flex flex-col items-center py-4 space-y-4 bg-yellow-600 text-white">
-            <a href="#" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Home</a>
-            <a href="#menu" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Menu</a>
-            <a href="#about" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">About Us</a>
-            <a href="#contact" class="hover:text-yellow-400 transition-all px-3 py-2 rounded-lg">Contact</a>
-        </div>
-    </div>
-</nav>
-<!-- nav end -->
     <main>
-
-
         <!-- Hero Section -->
         <section class="relative bg-cover bg-center h-screen flex flex-col lg:flex-row hero" id="hero">
             <div class="absolute inset-0 opacity-50"></div>
-            
+
             <div class="relative z-10 max-w-screen-xl mx-auto px-4 py-16 flex items-center flex-col lg:flex-row w-full">
-              <!-- Left Side Texts -->
-              <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6 hero-left">
-                <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
-                  <span class="text-yellow-500">Tasty Food</span> Welcome to The Culinary Haven
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-500">
-                  Savor the best dishes crafted with love and passion for your tastebuds. From fresh ingredients to expert chefs, we bring you an unforgettable dining experience.
-                </p>
-                
-                <div class="space-x-4 space-y-2 mt-6">
-                  <a href="#menu" class="bg-yellow-500 hover:bg-yellow-400 text-white py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 inline-block">
-                    Explore Our Menu <i class="fas fa-arrow-right"></i>
-                  </a>
-                  <a href="#menu" class="bg-yellow-500 hover:bg-yellow-400 text-white py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 inline-block">
-                    Watch Video <i class="fas fa-play"></i>
-                  </a>
+                <!-- Left Side Texts -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6 hero-left wow fadeInUp">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
+                        <span class="text-yellow-500">Tasty Food</span> Welcome to The Culinary Haven
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-500">
+                        Savor the best dishes crafted with love and passion for your tastebuds. From fresh ingredients
+                        to expert chefs, we bring you an unforgettable dining experience.
+                    </p>
+
+                    <div class="space-x-4 space-y-2 mt-6">
+                        <a href="#menu"
+                            class="bg-yellow-500 hover:bg-yellow-400 text-white py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 inline-block">
+                            Explore Our Menu <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#menu"
+                            class="bg-yellow-500 hover:bg-yellow-400 text-white py-3 px-8 rounded-full text-lg font-semibold transition-all duration-300 inline-block">
+                            Watch Video <i class="fas fa-play"></i>
+                        </a>
+                    </div>
                 </div>
-              </div>
-          
-              <!-- Right Side Dish Images -->
-              <div class="hero-right w-full lg:w-1/2 mt-8 lg:mt-0">
-                <div class="hero-right-child relative">
-                  <img src="https://static.vecteezy.com/system/resources/previews/010/916/886/non_2x/fast-food-3d-model-free-png.png" alt="Dish 1" class="hero-img w-full object-contain">
+
+                <!-- Right Side Dish Images -->
+                <div class="hero-right w-full lg:w-1/2 mt-8 lg:mt-0">
+                    <div class="hero-right-child relative">
+                        <img src="https://static.vecteezy.com/system/resources/previews/010/916/886/non_2x/fast-food-3d-model-free-png.png"
+                            alt="Dish 1" class="hero-img w-full object-contain">
+                    </div>
                 </div>
-              </div>
             </div>
-    
-          </section>
-          
+
+        </section>
+
         <!-- hero section end -->
 
 
 
-        <!-- Service Section -->
+        <!-- Service Section start-->
         <section id="service">
             <div class="py-16">
                 <div class="max-w-screen-xl mx-auto px-4 service-child">
@@ -157,8 +164,10 @@
             </div>
         </section>
 
+        <!-- service section end -->
 
-        <!-- famous -->
+
+        <!-- famous section start -->
         <section class="famous bg-gray-900 text-white py-16" id="famous">
             <div class="container mx-auto px-4">
                 <!-- Top Section -->
@@ -230,15 +239,17 @@
                 </div>
             </div>
         </section>
+        <!-- famous section end -->
 
+        <!-- all menu section start -->
 
-        <section class="alltheitems bg-white text-gray-800 py-16" id="alltheitems">
+        <section class="alltheitems bg-white text-gray-800 py-16" id="menu">
             <div class="container mx-auto px-4">
                 <!-- Top Section -->
                 <div class="top-container flex flex-col sm:flex-row justify-between items-center mb-12">
                     <div class="top-container-left-child text-center sm:text-left">
                         <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
-                            Best <span class="text-yellow-500">Popular</span><br> Items
+                            Our <span class="text-yellow-500">Best</span><br> Menus
                         </h2>
                     </div>
                     <div class="top-container-right-child text-gray-600 mt-6 sm:mt-0 sm:ml-8">
@@ -315,29 +326,36 @@
                 </div>
             </div>
         </section>
+        <!-- all menu section end -->
 
 
+        <!-- discount menu section start -->
         <section class="discount-section bg-gray-900 py-16">
             <div class="container mx-auto px-4">
                 <!-- Section Header -->
-                <div class="header text-center mb-12">
-                    <h2 class="text-5xl font-extrabold text-white">
-                        <span class="text-yellow-500">Exclusive</span> Discounts
-                    </h2>
-                    <p class="text-lg text-gray-400 mt-4">
-                        Grab these deals before they're gone! Fresh, delicious, and at a great price.
-                    </p>
+
+                <div class="top-container flex flex-col sm:flex-row justify-between items-center mb-12">
+                    <div class="top-container-left-child text-center sm:text-left">
+                        <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4 text-white">
+                            Exclusive <span class="text-yellow-500"> Discounts</span><br> items
+                        </h2>
+                    </div>
+                    <div class="top-container-right-child text-gray-600 mt-6 sm:mt-0 sm:ml-8">
+                        <p class="text-lg">
+                            Grab these deals before they're gone! Fresh, delicious, and at a great price.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Discount Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Discount Item -->
                     <div
-                        class="item relative bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+                        class="item relative bg-gray-800  rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGFswRoOm85yC4mHTr02XqoHGoYlbXFDLOg&s"
                             alt="Burger" class="w-full h-56 object-cover">
                         <div class="content p-6">
-                            <h3 class="text-2xl font-bold text-gray-800">Juicy Burger</h3>
+                            <h3 class="text-2xl font-bold text-white">Juicy Burger</h3>
                             <p class="text-gray-600 mt-2">25% Discount</p>
                             <div class="price mt-4 flex justify-between items-center">
                                 <span class="text-red-500 font-bold text-lg">$2.60</span>
@@ -352,11 +370,11 @@
 
                     <!-- Discount Item -->
                     <div
-                        class="item relative bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+                        class="item relative bg-gray-800  rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGFswRoOm85yC4mHTr02XqoHGoYlbXFDLOg&s"
                             alt="Waffles" class="w-full h-56 object-cover">
                         <div class="content p-6">
-                            <h3 class="text-2xl font-bold text-gray-800">Belgian Waffles</h3>
+                            <h3 class="text-2xl font-bold text-white">Belgian Waffles</h3>
                             <p class="text-gray-600 mt-2">Save 20%</p>
                             <div class="price mt-4 flex justify-between items-center">
                                 <span class="text-red-500 font-bold text-lg">$3.80</span>
@@ -371,11 +389,11 @@
 
                     <!-- Discount Item -->
                     <div
-                        class="item relative bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
+                        class="item relative bg-gray-800  rounded-lg shadow-lg overflow-hidden hover:scale-105 transform transition">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGFswRoOm85yC4mHTr02XqoHGoYlbXFDLOg&s"
                             alt="Tacos" class="w-full h-56 object-cover">
                         <div class="content p-6">
-                            <h3 class="text-2xl font-bold text-gray-800">Tortilla Wrap Tacos</h3>
+                            <h3 class="text-2xl font-bold text-white">Tortilla Wrap Tacos</h3>
                             <p class="text-gray-600 mt-2">Get Your Order Fresh</p>
                             <div class="price mt-4 flex justify-between items-center">
                                 <span class="text-red-500 font-bold text-lg">$5.50</span>
@@ -383,25 +401,34 @@
                             </div>
                         </div>
                         <span
-                            class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 text-sm font-bold rounded-full">
+                            class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 text-sm font-bold rounded-full">
                             15% Off
                         </span>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- discount menu section end -->
 
-        <section class="our-gallery bg-dark-50 py-16">
+
+        <!-- Gallary section start -->
+        <section class="our-gallery bg-dark-50 py-16 text-gray-800" id="gallery">
             <div class="container mx-auto px-4">
                 <!-- Section Header -->
-                <div class="header text-center mb-12">
-                    <h2 class="text-5xl font-extrabold text-gray-800">
-                        Explore <span class="text-yellow-500">Our Gallery</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mt-4">
-                        A glimpse of our moments, events, and creations.
-                    </p>
+
+                <div class="top-container flex flex-col sm:flex-row justify-between items-center mb-12">
+                    <div class="top-container-left-child text-center sm:text-left">
+                        <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
+                            Explore <span class="text-yellow-500"> our</span><br> Galery
+                        </h2>
+                    </div>
+                    <div class="top-container-right-child text-gray-600 mt-6 sm:mt-0 sm:ml-8">
+                        <p class="text-lg">
+                            A glimpse of our moments, events, and creations.
+                        </p>
+                    </div>
                 </div>
+
 
                 <!-- Gallery Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -430,25 +457,34 @@
 
             <!-- Lightbox Modal -->
             <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden">
-                <button class="absolute top-64 right-10 text-white text-3xl font-bold" onclick="closeLightbox()">
+                <button class="absolute top-28 right-10 text-white text-3xl font-bold" onclick="closeLightbox()">
                     &times;
                 </button>
                 <img id="lightboxImage" class="max-w-full max-h-full rounded-lg" src="" alt="Full Image" />
             </div>
         </section>
+        <!-- Gallary section end -->
+
 
         <!-- our team section start -->
 
-        <section class="restaurant-partners py-16 bg-gray-50">
+        <section class="restaurant-partners py-16 text-gray-800" id="contact">
             <div class="container mx-auto px-4">
                 <!-- Section Header -->
-                <div class="header text-center mb-12">
-                    <h2 class="text-5xl font-extrabold text-gray-800">
-                        Meet Our <span class="text-yellow-500">Restaurant Partners</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mt-4">
-                        Our talented team and trusted restaurant partners work hard to bring you the best!
-                    </p>
+
+
+                <div class="top-container flex flex-col sm:flex-row justify-between items-center mb-12">
+                    <div class="top-container-left-child text-center sm:text-left">
+                        <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
+                            Meet Our <span class="text-yellow-500">Restaurant Partners</span><br>
+                        </h2>
+                    </div>
+                    <div class="top-container-right-child text-gray-600 mt-6 sm:mt-0 sm:ml-8">
+                        <p class="text-lg">
+                            Our talented team and trusted restaurant partners work hard to bring you the best!
+
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Team Members Grid -->
@@ -463,6 +499,8 @@
                             <p class="text-gray-600">Executive Chef</p>
                         </div>
                     </div>
+
+
 
                     <!-- Partner 2 -->
                     <div class="partner-item rounded-lg overflow-hidden shadow-lg text-center">
@@ -500,11 +538,10 @@
             </div>
         </section>
 
-
         <!-- our team section end -->
-
     </main>
 
+    <!-- Footer start -->
     <footer class="bg-gray-900 text-white py-10">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -553,20 +590,20 @@
             </div>
         </div>
     </footer>
+    <!-- Footer end -->
 
 
-    <script src="./js/script.js">
-       
+    <script src="./js/script.js"></script>
+
+    <!-- js for the topPop libary -->
+    <script type="module">
+        import { backToTop } from "https://cdn.jsdelivr.net/gh/saarock/topPop@main/topPop.js";
+
+        // Initialize the Back to Top button
+        backToTop.backToTop({
+            backColor: "#f59e0b", // Optional: Customize the button color
+        });
     </script>
-
-<script type="module">
-    import { backToTop } from "https://cdn.jsdelivr.net/gh/saarock/topPop@main/index.js";
-
-    // Initialize the Back to Top button
-    backToTop.backToTopCodes({
-        backColor: "#f59e0b", // Optional: Customize the button color
-    });
-</script>
 </body>
 
 </html>

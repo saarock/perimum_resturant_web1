@@ -1,6 +1,6 @@
-:root{
+:root {
     --primary: #f59e0b;
-    
+
 }
 
 html {
@@ -10,23 +10,21 @@ html {
 }
 
 body {
-    font-family:inherit;
+    font-family: inherit;
     background-color: rgb(194, 199, 199);
 }
 
 .nav {
-    background: linear-gradient(#ffd69475,#ffd69475);
+    background: linear-gradient(#ffd69475, #ffd69475);
     z-index: 999
-
-
 }
+
 .main-menu {
     padding: 1rem;
     border-radius: 2rem;
-    /* color: rgba(0, 0, 0, 0.733); */
     z-index: 999999;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 }
 
@@ -35,8 +33,11 @@ body {
 
 /* hero css start */
 .hero {
-    background: linear-gradient(#ffd69475,#ffbb461a);
+    background: linear-gradient(#ffd69475, #ffbb461a), url("./images/foods.png");
+    background-position: center;
+    background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 
@@ -50,13 +51,10 @@ body {
 #service {
     position: relative;
     top: -8rem;
-    /* z-index: 9999; */
 }
 
 .service-child {
     background-color: white;
-    /* background-color: red; */
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border-radius: 4rem;
     overflow: hidden;
     border: 2px solid rgba(128, 128, 128, 0.218);
@@ -76,10 +74,10 @@ body {
 .container {
     width: 80vw;
     border-top: 2px solid rgba(128, 128, 128, 0.218);
-    /* border-radius: 2rem; */
     padding: 1rem;
 
 }
+
 .child-container {
     width: 84%;
 }
@@ -87,16 +85,14 @@ body {
 .famous-best {
     font-size: 3rem;
 }
+
 .top-container {
     display: flex;
     justify-content: space-between;
 }
+
 .top-container-right-child p {
     color: gray;
 }
+
 /* famouse section end */
-
-
-/* discount-section start */
-
-/* discount section end */
