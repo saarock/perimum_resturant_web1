@@ -40,6 +40,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.hero-right-child {
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 2rem;
+}
 
 
 
@@ -96,3 +101,7 @@ body {
 }
 
 /* famouse section end */
+
+/* lightbox css start */
+
+/* lightbox end */

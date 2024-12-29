@@ -1,4 +1,7 @@
+
+
 function openLightbox(imageSrc) {
+    // event.preventDefault()
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     lightboxImage.src = imageSrc;
@@ -17,3 +20,9 @@ const mobileMenu = document.getElementById("mobileMenu");
 mobileMenuButton.addEventListener("click", () => {
 mobileMenu.classList.toggle("hidden");
 });
+
+
+
+
+
+
