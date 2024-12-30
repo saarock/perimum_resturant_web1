@@ -103,6 +103,34 @@ body {
     color: gray;
 }
 
+
+/* owner and tech css start */
+.owner {
+    background-color: rgb(150, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.tech {
+    background-color: rgb(147, 150, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* owner and tech css start */
+
 /* famouse section end */
 
 /* lightbox css start */
