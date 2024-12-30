@@ -5,6 +5,9 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 700;
+    font-style: italic;
 
 
 }
@@ -116,7 +119,7 @@ body {
         top: 25rem;
         margin-bottom: 23rem;
     }
-    
+
 }
 
 
@@ -128,7 +131,7 @@ body {
         top: 21rem;
         margin-bottom: 23rem;
     }
-    
+
 }
 
 @media only screen and (max-width:640px) {
@@ -138,7 +141,29 @@ body {
         top: 16rem;
         margin-bottom: 16rem;
     }
-    
+
 }
 
+@media only screen and (max-width: 740px) {
+    .hero-right-child {
+        height: 22rem;
+        box-shadow: 0rem 0rem 2rem 2rem rgb(225, 199, 4);
+        margin: 0;
+        position: relative;
+        top: 4rem;
+    }
+
+    .hero-right-child img {
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1180px) {
+  #service {
+    position: relative;
+    top: 12rem;
+  }
+
+}
 /* responsive css start */
