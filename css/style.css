@@ -105,3 +105,40 @@ body {
 /* lightbox css start */
 
 /* lightbox end */
+
+
+/* responsive css start */
+
+@media only screen and (max-width:1047px) {
+    #service {
+        /* background-color: red; */
+        position: relative;
+        top: 25rem;
+        margin-bottom: 23rem;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:849px) {
+    #service {
+        /* background-color: red; */
+        position: relative;
+        top: 21rem;
+        margin-bottom: 23rem;
+    }
+    
+}
+
+@media only screen and (max-width:640px) {
+    #service {
+        /* background-color: red; */
+        position: relative;
+        top: 16rem;
+        margin-bottom: 16rem;
+    }
+    
+}
+
+/* responsive css start */
